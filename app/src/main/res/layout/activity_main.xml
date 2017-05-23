@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rajora_sd.hellokotlin.MainActivity">
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Click me!"
+        android:id="@+id/clickCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_below="@+id/clickCounter"
+        android:id="@+id/listContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_below="@+id/listContainer"
+        android:id="@+id/enterName"
+        android:layout_centerInParent="true"
+        android:hint="Enter Name"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:max="100"
+        android:progress="50"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/enterName"
+        android:id="@+id/progressController"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:max="100"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:progress="50"
+        android:layout_below="@+id/progressController"
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
